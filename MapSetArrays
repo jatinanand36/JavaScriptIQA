@@ -1,0 +1,106 @@
+var s = ['a','b','c'];
+undefined
+s.shift()
+"a"
+s.unshift()
+2
+s.unshift('aa')
+3
+US = s.unshift('aa')
+4
+US
+4
+typeof US
+"number"
+s;
+(4) ["aa", "aa", "b", "c"]
+Array.isArray(s)
+true
+Array.from(s)
+(4) ["aa", "aa", "b", "c"]
+AF = Array.from(['1','2'])
+(2) ["1", "2"]
+AF;
+(2) ["1", "2"]
+typeof AF
+"object"
+Array.from({'1':['Sita','Rita']})
+[]
+Array.from({'1':['Sita','Rita']},function (s){return s;})
+[]
+Array.from({'1':['Sita','Rita']},function (s){return s;})
+[]
+var set = new Set(new Array(['1','3']))
+undefined
+set;
+Set(1) {Array(2)}[[Entries]]0: Array(2)value: Array(2)0: "1"1: "3"length: 2__proto__: Array(0)size: (...)__proto__: Set
+typeof set;
+"object"
+set instanceof Set;
+true
+set instanceof Arr;
+VM4664:1 Uncaught ReferenceError: Arr is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM4664:1
+set instanceof Array;
+false
+set instanceof Object;
+true
+set instanceof Window;
+false
+set instanceof Function;
+false
+const map = new Map([[1, 2], [2, 4], [4, 8]]);
+undefined
+map
+Map(3) {1 => 2, 2 => 4, 4 => 8}
+var setNew = new Set(1,2,3,4,5)
+VM5002:1 Uncaught TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at new Set (<anonymous>)
+    at <anonymous>:1:14
+(anonymous) @ VM5002:1
+var setNew = new Set([1,2,3,4,5])
+undefined
+setNew
+Set(5) {1, 2, 3, 4, 5}
+var setNew = new Set([5,4,3,2,1])
+undefined
+setNew
+Set(5) {5, 4, 3, 2, 1}
+var mapArray1 = Array.from(map);
+undefined
+mapArray1;
+(3) [Array(2), Array(2), Array(2)]0: (2) [1, 2]1: (2) [2, 4]2: (2) [4, 8]length: 3__proto__: Array(0)
+var mapArray2 = new Array(map);
+undefined
+mapArray2
+[Map(3)]0: Map(3)[[Entries]]0: {1 => 2}key: 1value: 21: {2 => 4}2: {4 => 8}size: (...)__proto__: Maplength: 1__proto__: Array(0)
+function f() {
+  return Array.from(arguments);
+}
+
+f();
+[]
+f('2',2,true,undefined,NaN,Infinity,{'id':12002},[12,23,'1'+2]);
+(8) ["2", 2, true, undefined, NaN, Infinity, {…}, Array(3)]0: "2"1: 22: true3: undefined4: NaN5: Infinity6: {id: 12002}7: (3) [12, 23, "12"]length: 8__proto__: Array(0)
+do
+    console.log('My name');
+while
+    console.log('My name in while');
+VM6231:4 Uncaught SyntaxError: Unexpected identifier
+function One(){
+for (let i=1;i<=1000;i++){
+console.log(i);}
+}
+undefined
+function Two(){
+for (let i=1;i<=10000;i++){
+console.log(i);}
+}
+undefined
+function Three(){
+for (let i=1;i<=100000;i++){
+console.log(i);}
+}
+undefined
+One();
